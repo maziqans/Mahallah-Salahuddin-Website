@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mahallah Salahuddin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Dropdown Menu -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- CS Select -->
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-border.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+
+</head>
+<body>
+	<div id="webpage-wrapper">
+	<div id="webpage-page">
+	<div id="webpage-header">
+		<header id="webpage-header-section">
+			<div class="container">
+				<div class="nav-header">
+					<h1 id="webpage-logo"><a href="index.html">Mahallah Salahuddin Al-Ayubbi</a></h1>
+					<h1 id="live-time">Loading...</h1>
+					<nav id="webpage-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="webpage-primary-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Block</a></li> <!--Put the .html page here-->
+							<li><a href="#">Management</a></li> <!--Put the .html page here-->
+							<li><a href="#">Register</a></li> <!--Put the .html page here-->
+							<li><a href="#">Contact</a></li> <!--Put the .html page here-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+	</div>
+	<aside id="webpage-hero" class="js-fullheight">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url(images/mahallah1.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
+		   				<div class="slider-text-inner js-fullheight">
+		   					<div class="desc">
+		   						<p><span>Mahallah Salahuddin Al-Ayubbi</span></p>
+		   						<h2>Building The Next Warrior</h2>
+			   					<p>
+			   						<a href="#" class="btn btn-primary btn-lg">Register Now</a>
+			   					</p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/mahallah2.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
+		   				<div class="slider-text-inner js-fullheight">
+		   					<div class="desc">
+		   						<p><span>Mahallah Salahuddin Al-Ayubbi</span></p>
+		   						<h2>Building The Next Warrior</h2>
+			   					<p>
+			   						<a href="#" class="btn btn-primary btn-lg">Register Now</a>
+			   					</p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/mahallah3.jpg);">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="col-md-12 col-md-offset-0 text-center slider-text">
+		   				<div class="slider-text-inner js-fullheight">
+		   					<div class="desc">
+		   						<p><span>Mahallah Salahuddin Al-Ayubbi</span></p>
+		   						<h2>Building The Next Warrior</h2>
+			   					<p>
+			   						<a href="#" class="btn btn-primary btn-lg">Register Now</a>
+			   					</p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	
+		  	</ul>
+	  	</div>
+	</aside>
+	<div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div id="availability">
+					<form action="#">
+
+						<div class="a-col">
+							<section>
+								<select id="blockSelect" class="cs-select cs-skin-border" onchange="updateRooms()">
+									<option value="" disabled selected>Select Block</option>
+									<option value="A">Block A</option>
+									<option value="B">Block B</option>
+									<option value="C">Block C</option>
+									<option value="D">Block D</option>
+								</select>
+							</section>
+						</div>
+						<div class="a-col alternate">
+							<section>
+								<select id="levelSelect" class="cs-select cs-skin-border" onchange="updateRooms()">
+									<option value="" disabled selected>Select Level</option>
+									<option value="1">Level 1</option>
+									<option value="2">Level 2</option>
+									<option value="3">Level 3</option>
+									<option value="4">Level 4</option>
+								</select>
+							</section>
+						</div>
+						<div class="a-col alternate">
+							<section>
+								<select id="roomSelect" class="cs-select cs-skin-border">
+									<option value="" disabled selected>Select Room</option>
+								</select>
+							</section>
+						</div>
+						<div class="a-col action">
+							<a href="#" onclick="checkAvailability()">
+								<span>Check</span>
+								Availability
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="featured-mahallah" class="webpage-bg-color">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>Mahallah Office</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="feature-full-1col">
+					<div class="image" style="background-image: url(images/roslaily.png);"></div>
+					<div class="desc">
+						<h3>Roslaily Hashim</h3>
+						<p>Asst. Hostel Manager <br> 0132562816 <br> roslaily@live.iium.edu.my</p>
+						<p><a href="#" class="btn btn-primary btn-office-primary">Contact <i class="ti-angle-right"></i></a></p>
+					</div>
+				</div>
+
+				<div class="feature-full-2col">
+					<div class="f-mahallah">
+						<div class="image" style="background-image: url(images/salmah.png);"></div>
+						<div class="desc">
+							<h3>Salmah Rashid</h3>
+							<p>IC Accomodation <br> 0176169063 <br> salmah@live.iium.edu.my</p>
+							<p><a href="#" class="btn btn-primary btn-office-primary">Contact<i class="ti-angle-right"></i></a></p>
+						</div>
+					</div>
+					<div class="f-mahallah">
+						<div class="image" style="background-image: url(images/farid.png);"></div>
+						<div class="desc">
+							<h3>Muhamad Farid Kamarudin </h3>
+							<p>IC Maintenance <br> 0193070718 <br> farid@live.iium.edu.my</p>
+							<p><a href="#" class="btn btn-primary btn-office-primary">Contact <i class="ti-angle-right"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="mahallah-facilities">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>Mahallah Facilities</h2>
+					</div>
+				</div>
+			</div>
+	
+			<div id="tabs">
+				<nav class="tabs-nav">
+					<a href="#" class="active" data-tab="tab1">
+						<i class="cafe"></i>
+						<span>Cafes</span>
+					</a>
+					<a href="#" data-tab="tab2">
+						<i class="court"></i>
+						<span>Court</span>
+					</a>
+					<a href="#" data-tab="tab3">
+						<i class="surau"></i>
+						<span>Surau</span>
+					</a>
+				</nav>
+				<div class="tab-content-container">
+					<div class="tab-content active show" data-tab-content="tab1">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="images/Shawarmahabibi.jpg" class="img-responsive" alt="Image">
+								</div>
+								<div class="col-md-6">
+									<span class="super-heading-sm">Cafe </span>
+									<h3 class="heading">Shawarma Habibi</h3>
+									<p>Welcome to Shawarma Habibi, where the rich flavors of the Middle East come to life in 
+										every bite. Immerse yourself in the vibrant and inviting atmosphere as you savor our 
+										authentic shawarma, meticulously crafted with a blend of premium meats, aromatic spices, 
+										and traditional recipes passed down through generations. Our menu boasts a tantalizing 
+										selection of shawarma wraps, bowls, and platters, each offering a delightful journey for 
+										your taste buds. At Shawarma Habibi, we take pride in delivering a culinary experience 
+										that captures the essence of hospitality and love – a true celebration of Middle Eastern flavors. 
+										Join us and indulge in the taste of tradition,
+										 where every dish tells a story of heritage and passion.</p>
+									<p class="service-hour">
+										<span>Service Hours</span>
+										<strong>7:30 AM - 11:00 PM</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-tab-content="tab2">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="images/court.jpg_large" class="img-responsive" alt="Image">
+								</div>
+								<div class="col-md-6">
+									<span class="super-heading-sm">Court </span>
+									<h3 class="heading">Multipurpose Court</h3>
+									<p>Experience the thrill of sports and recreation at our Multipurpose Court facility – 
+										the perfect destination for enthusiasts seeking versatility in their active pursuits. 
+										Our state-of-the-art court is a dynamic space designed to accommodate various sports and 
+										recreational activities. Whether you're into basketball, volleyball, badminton, or any other 
+										court-based sport, our multipurpose court provides the ideal setting for friendly competitions
+										 and engaging workouts. Equipped with top-notch amenities, our court ensures a seamless blend 
+										 of fitness and fun. Embrace an active lifestyle and join us at the Multipurpose Court, where 
+										 versatility meets excellence, 
+										and every game is an opportunity for a new adventure.</p>
+									<p class="service-hour">
+										<span>Service Hours</span>
+										<strong>6:00 AM - 12:00 AM</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-tab-content="tab3">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<img src="images/surau.jpg" class="img-responsive" alt="Image">
+								</div>
+								<div class="col-md-6">
+									<span class="super-heading-sm">Surau </span>
+									<h3 class="heading">Musolla</h3>
+									<p>Experience the tranquility of our Musolla, a sacred space for Salah and spiritual connection. 
+										Our Musolla, or prayer room, is designed as a serene sanctuary for reflection, contemplation, 
+										and devotion. Embrace the peaceful ambiance as you engage in moments of connection with the Divine. 
+										Tailored for various prayer needs, the Musolla is a haven for individuals seeking solace and a tranquil 
+										refuge for Salah. Find your inner peace and deepen your spiritual journey at our Musolla
+										 – a space dedicated to the practice of Islamic rituals and mindful contemplation.</p>
+									<p class="service-hour">
+										<span>Service Hours</span>
+										<strong>Opens 24 Hours</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="webpage-news-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>News & Updates</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="news-grid" style="background-image: url(images/resnotice.png);">
+						<div class="date text-center">
+							<span>09</span>
+							<small>Aug</small>
+						</div>
+					</div>
+					<div class="desc">
+						<h3><a href="#">Residents Notice</a></h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="news-grid" style="background-image: url(images/toilet.JPG);">
+						<div class="date text-center">
+							<span>11</span>
+							<small>Nov</small>
+						</div>
+					</div>
+					<div class="desc">
+						<h3><a href="#">Toilet Maintenance</a></h3>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="news-grid" style="background-image: url(images/cafemaintenance.jpg);">
+						<div class="date text-center">
+							<span>23</span>
+							<small>Nov</small>
+						</div>
+					</div>
+					<div class="desc">
+						<h3><a href="#">Cafe Maintenance</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer" class="footer-color">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="copyright">
+						<p><small>&copy; Mahallah Salahuddin  <br> All Rights Reserved.</small></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>Mahallah</h3>
+							<ul class="link">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Block</a></li>
+								<li><a href="#">Management</a></li>
+								<li><a href="#">Register</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3>Our Facilities</h3>
+							<ul class="link">
+								<li><a href="#">Cafe</a></li>
+								<li><a href="#">Court</a></li>
+								<li><a href="#">Surau</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<h3>Inquiry</h3>
+							<p>If you have any inquiries, please drop your email below and we'll contact you. </p>
+							<form action="#" id="form-inquiry">
+								<div class="form-field">
+									<input type="email" placeholder="Email Address" id="email">
+									<input type="submit" id="submit" value="Send">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</div>
+
+	</div>
+	
+	<!-- Javascripts -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Dropdown Menu -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Date Picker -->
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<!-- CS Select -->
+	<script src="js/classie.js"></script>
+	<script src="js/selectFx.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Custom JS -->
+	<script src="js/custom.js"></script>
+
+</body>
+</html>
