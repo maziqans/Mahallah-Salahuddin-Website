@@ -193,7 +193,7 @@ $(function(){
               const dateTime = new Date(data.datetime);
   
               // Format the date and time
-              const formattedDateTime = dateTime.toLocaleString('en-US', {
+              const formattedDateTime = dateTime.toLocaleString('en-UK', {
                   year: 'numeric',
                   month: 'short',
                   day: 'numeric',
