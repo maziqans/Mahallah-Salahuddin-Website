@@ -1,0 +1,538 @@
+*{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: #e9d7d7;
+}
+.desktop-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header"
+    "map"
+    "typeroom"
+    "faciliti"
+    "revieW"
+    "footer";
+  background-color:rgb(238, 141, 141)!important;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-ubuntu);
+}
+.header {
+  grid-area: header;
+}
+.navbar {
+  position:absolute;
+  right:0;
+  top:3%;
+  overflow: hidden;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  
+  display: block;
+  color: #f8efef;
+  text-align:right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #e7e2e2;
+  color: black;
+}
+
+@media screen and (max-width: 1920px) {
+  .navbar a {
+    float:none;
+    display: block;
+    text-align: right;
+  }
+}
+.map {
+  grid-area: map;
+}
+
+.map-of-mahallah {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, 1000%);
+  white-space: pre-wrap;
+  line-height: 135%;
+}
+
+.typeroom{
+  grid-area: typeroom;
+}
+ 
+.type-of-room {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%,-50%);
+}
+
+.square {
+  width: 1900px;
+  height: 500px;
+  background-color:#f0e6e6;
+  position: absolute;
+  top: 940px;
+  left: 0px;
+}
+
+.faciliti {
+  grid-area: faciliti;
+}
+.revieW{
+  grid-area: revieW;
+}
+.footer {
+  grid-area: footer;
+}
+.insta {
+  position: absolute;
+  top: 2850px;
+  left: 1000px;
+  width:100px;
+}
+
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-size: 24px;
+  color: rgb(12, 12, 12);
+  
+  border: none;
+  cursor: pointer;
+}
+.prev {
+  left: -650px; /* Adjust the left position for the "Previous" arrow */
+}
+
+.next {
+  right: -100px; /* Adjust the right position for the "Next" arrow */
+}
+
+.prev:hover, .next:hover {
+  background-color: #c0adad;
+}
+
+
+
+html{
+  height:auto;
+  width:100%;
+ 
+}
+body{
+  width:100%;
+  height :auto ;
+  position: relative;
+}
+
+
+.desktop-1-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 457px;
+  object-fit: cover;
+}
+
+.hostel-review {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 400%);
+  font-size: var(--font-size-17xl);
+  letter-spacing: 2px;
+  line-height: 135%;
+  text-transform: capitalize;
+  color: var(--color-white);
+}
+.desktop-1-inner,
+.desktop-1-item {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.desktop-1-item {
+  top: 940px;
+  background-color: #181717;
+  height: 522px;
+}
+.desktop-1-inner {
+  top: 2030px;
+  background-color: var(--color-gainsboro-200);
+  height: 599px;
+}
+.review-form {
+  position: absolute;
+  top: 2090px;
+  left: 77px;
+  line-height: 28px;
+  font-family: var(--font-inter);
+}
+.desktop-1-child1,
+.rectangle-icon {
+  position: absolute;
+  top:23%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  width: 207px;
+  height: 372px;
+  object-fit: cover;
+}
+.desktop-1-child1
+ {
+  top: 700px;
+  left: 300px;
+  border-radius: 50px;
+  width: 474px;
+  height: 262px;
+}
+.rectangle-div {
+  position: absolute;
+  top: 1150px;
+  left: 657px;
+  border-radius: 20px;
+  background-color: var(--color-gainsboro-200);
+  width: 622px;
+  height: 182px;
+}
+.desktop-1-child2,
+.image-1-icon,
+.image-2-icon,
+.image-3-icon {
+  position: absolute;
+  top: 1564px;
+  left: 183px;
+  width: 70px;
+  height: 61px;
+  object-fit: cover;
+}
+.desktop-1-child2,
+.image-2-icon,
+.image-3-icon {
+  top: 1583px;
+  left: 673px;
+  width: 63px;
+}
+.desktop-1-child2,
+.image-3-icon {
+  left: 1146px;
+  width: 109px;
+}
+.desktop-1-child2 {
+  top: 1670px;
+  left: 20px;
+  width: 413px;
+  height: 249px;
+}
+
+.desktop-1-child5,
+.desktop-1-child6 {
+  position: absolute;
+  top: 1670px;
+  left: 507px;
+  width: 413px;
+  height: 249px;
+  object-fit: cover;
+}
+.desktop-1-child6 {
+  left: 1008px;
+}
+
+
+.any-inquiry-please,
+.facilities {
+  position: absolute;
+  top: 2732px;
+  font-size: var(--font-size-5xl);
+  letter-spacing: 2px;
+  line-height: 135%;
+  color: var(--color-gray-100);
+  display: inline-block;
+}
+.facilities {
+  left: 486px;
+  text-transform: uppercase;
+  width: 194px;
+  height: 56px;
+}
+.any-inquiry-please {
+  left: 878px;
+  text-transform: capitalize;
+  width: 595px;
+  text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+}
+.blocks,
+.contact,
+.home,
+.mahallah,
+.management,
+.register {
+  position: absolute;
+  left: 0;
+  letter-spacing: 2px;
+  line-height: 135%;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 193px;
+  height: 51px;
+}
+.mahallah {
+  top: 0;
+  color: var(--color-gray-100);
+}
+.blocks,
+.contact,
+.home,
+.management,
+.register {
+  top: 84px;
+  font-weight: 500;
+}
+.blocks,
+.contact,
+.management,
+.register {
+  top: 151px;
+}
+.contact,
+.management,
+.register {
+  top: 219px;
+  width: 281px;
+  height: 50px;
+}
+.contact,
+.register {
+  top: 286px;
+  width: 193px;
+  height: 51px;
+}
+.contact {
+  top: 353px;
+}
+.cafes,
+.court,
+.mahallah-parent {
+  font-size: var(--font-size-5xl);
+  color: var(--color-orangered);
+}
+.mahallah-parent {
+  position: absolute;
+  top: 2732px;
+  left: 130px;
+  width: 281px;
+  height: 404px;
+}
+.cafes,
+.court {
+  left: 486px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 194px;
+  height: 56px;
+}
+.cafes {
+  position: absolute;
+  top: 2825px;
+  letter-spacing: 2px;
+  line-height: 135%;
+}
+.court {
+  top: 2902px;
+}
+.court,
+.dobi,
+.home1,
+.mahallah-salahudin-al-ayubi {
+  position: absolute;
+  letter-spacing: 2px;
+  line-height: 135%;
+}
+.dobi {
+  top: 2972px;
+  left: 486px;
+  font-size: var(--font-size-5xl);
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-orangered);
+  display: inline-block;
+  width: 194px;
+  height: 56px;
+}
+.home1,
+.mahallah-salahudin-al-ayubi {
+  top: 24px;
+}
+.mahallah-salahudin-al-ayubi {
+  left: 19px;
+  font-size: var(--font-size-5xl);
+  text-transform: capitalize;
+  display: inline-block;
+  color: var(--color-white);
+  width: 483px;
+  height: 23px;
+}
+.home1 {
+  left: 674px;
+  width: 92px;
+}
+
+.block,
+.home1,
+.management1,
+.register1 {
+  text-transform: capitalize;
+  display: inline-block;
+  color: var(--color-white);
+  height: 23px;
+}
+.block {
+  position: absolute;
+  top: 24px;
+  left: 797px;
+  letter-spacing: 2px;
+  line-height: 135%;
+  width: 92px;
+}
+.management1,
+.register1 {
+  top: 22px;
+}
+.management1 {
+  position: absolute;
+  left: 926px;
+  letter-spacing: 2px;
+  line-height: 135%;
+  width: 210px;
+}
+.register1 {
+  left: 1125px;
+  width: 136px;
+}
+.contact1,
+.map-of-mahallah,
+.quad-room,
+.twin-room,
+.single-room,
+.register1,
+.type-of-room {
+  position: absolute;
+  letter-spacing: 2px;
+  line-height: 135%;
+  text-align: center;
+}
+.contact1 {
+  top: 22px;
+  left: 1298px;
+  text-transform: capitalize;
+  display: inline-block;
+  color: var(--color-white);
+  width: 142px;
+  height: 23px;
+}
+.map-of-mahallah,
+.quad-room,
+.twin-room,
+.single-room,
+.type-of-room
+ {
+  font-size: var(--font-size-17xl);
+}
+
+
+.quad-room,
+.twin-room,
+.single-room,
+.type-of-room
+ {
+  top: 940px;
+  left: 577px;
+}
+.quad-room,
+.twin-room,
+.single-room {
+  top: 1014px;
+  left: 599px;
+  color: #f17b7b;
+}
+
+.iium-student-ratedaymonthly {
+  margin: 0;
+}
+.iium-student-ratedaymonthly-container {
+  position: absolute;
+  top: 1170px;
+  left: 687px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  line-height: 135%;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 592px;
+  height: 142px;
+}
+.facilities1 {
+  top: 1487px;
+  left: 608px;
+  font-size: var(--font-size-17xl);
+  letter-spacing: 2px;
+  line-height: 135%;
+}
+.facilities1,
+.label,
+.review {
+  position: absolute;
+}
+.review {
+  top: 2041px;
+  left: 638px;
+  font-size: var(--font-size-17xl);
+  letter-spacing: 2px;
+ 
+}
+
+.desktop-1-child3 {
+  position: absolute;
+  top: 2134px;
+  left: 594px;
+  background-color: #eb6161;
+  width: 707px;
+  height: 426px;
+}
+.review1 {
+  position: absolute;
+  top: 2097px;
+  left: 823px;
+  line-height: 28px;
+  font-family: var(--font-inter);
+}
+
+
+
+
+
+

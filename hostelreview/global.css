@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-ubuntu: Ubuntu;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-sm: 14px;
+  --font-size-17xl: 36px;
+  --font-size-5xl: 24px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-mediumslateblue: #5e5bff;
+  --color-gainsboro-100: #e2e1e5;
+  --color-gainsboro-200: #d9d9d9;
+  --color-lightgray: #d2d2d2;
+  --color-gray-100: #140909;
+  --color-orangered: #fd6109;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+  --padding-mini: 15px;
+
+  /* Border radiuses */
+  --br-8xs: 5px;
+}

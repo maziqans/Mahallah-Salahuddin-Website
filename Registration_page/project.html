@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page - Salahuddin al-Ayubi Hostel</title>
+    <style>
+        
+        body {
+            font-family: "Open Sans", Arial, serif;
+            line-height: 1.8;
+            font-size: 16px;
+            background: #fff;
+            color: #848484;
+            font-weight: 300;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #555;
+            padding: 10px;
+        }
+
+        .registration-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        .registration-box label {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .registration-box button {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .registration-box button:hover {
+            background-color: #45a049;
+        }
+        .section-header{
+            padding: 20px;
+            background-image: url('7804386_rFPdRGtCEmqO_e_7alD4R49tjl1jkrS-2PCwS1qHPDg.jpg');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+        .section{
+            padding: 20px;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .section label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .section select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .section-2 {
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+        .section-2 select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .rooms{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+        .room{
+            display: flex;
+            flex: 0 0 14.28%;
+            padding: 5px;
+            position: relative;
+        }
+        .room label{
+            display: block;
+            position: relative;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bolder;
+            line-height: 1.5rem;
+            padding: 4px 0;
+            background: #ffffff;
+            border-radius: 5px;
+            color: black;
+        }
+        .floor-navigation {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .floor-navigation button {
+            margin-right: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        ol{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .room label:hover{
+            cursor: pointer;
+            box-shadow: 0 0 0px 2px red;
+
+        }
+        .room input[type=radio]{
+            position: absolute;
+        }
+        .room input[type=radio]:checked + label {
+            background: red;
+        }
+        room:nth-child(3) {
+            margin-right: 14%;
+        }
+
+        .room input[type=radio] {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .room input[type=radio]:checked+label {
+            background: #ff0000;
+        }
+        #footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #footer h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        #footer .link {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #footer .link li {
+            margin-bottom: 10px;
+        }
+
+        #footer #form-inquiry {
+            display: flex;
+            align-items: center;
+        }
+
+        #footer #form-inquiry input[type="email"] {
+            width: 70%;
+            padding: 8px;
+        }
+
+        #footer #form-inquiry input[type="submit"] {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="section-header">
+    <header>MAHALLAH SALAHUDDIN AL-AYUBI</header>
+    <nav>
+        <a href="#home">Home</a>
+        
+        <a href="#block">Block</a>
+        <a href="#management">Management</a>
+        <a href="#registration">Registration</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <p style="background-image: url('Project/7804386_rFPdRGtCEmqO_e_7alD4R49tjl1jkrS-2PCwS1qHPDg.jpg');"></p>
+    <!-- Registration Section -->
+    <div class="registration-box">
+        <div class="box-header">
+            <h2>MAHALLAH REGISTRATION</h2>
+        </div>
+        <h4>Please fill-up all fields</h4>
+        <form>
+            <label for="Name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="IC">IC No.:</label>
+            <input type="text" id="IC" name="IC" required>
+
+            <label for="MatricNo">Matric No.:</label>
+            <input type="number" id="MatricNo" name="MatricNo" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <button type="button" onclick="verifyForm()">Verify</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</div>
+    <!-- Choose Block Section -->
+    <div class="section-2">
+        <h2>Choose Block</h2>
+        <form>
+            <label for="block">Select Block:</label>
+            <select id="block" name="block">
+                <option value="A">Block A</option>
+                <option value="B">Block B</option>
+                <option value="C">Block C</option>
+                <option value="D">Block D</option>
+                <option value="E">Block E</option>
+                <option value="F">Block F</option>
+                <option value="G">Block G</option>
+                <option value="H">Block H</option>
+                <option value="I">Block I</option>
+                <option value="PG">Block PG</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Choose Room Section -->
+    
+    <div class="section">
+        <h2>Choose Room</h2>
+        <div class="floor-navigation">
+            <button id='floor1' onclick="showFloor(1)">Floor 1</button>
+            <button id='floor2' onclick="showFloor(2)">Floor 2</button>
+            <button id='floor3' onclick="showFloor(3)">Floor 3</button>
+            <button id='floor4' onclick="showFloor(4)">Floor 4</button>
+        </div>
+        <div class="room-grid" id="floorroom">
+        <ol>
+            <li>
+              <ol class="rooms">
+                <li class="room">
+                  <input type="radio" id="1" name="seat" />
+                  <label for="1" id="label">1</label>
+                </li>
+                <li class="room">
+                  <input type="radio" id="2" name="seat" />
+                  <label for="2" id="label">2</label>
+                </li>
+                <li class="room">
+                  <input type="radio" id="3" name="seat" />
+                  <label for="3" id="label">3</label>
+                </li>
+              </ol>
+            </li>
+            <li>
+                <ol class="rooms">
+                  <li class="room">
+                    <input type="radio" id="4" name="seat" />
+                    <label for="4" id="label">4</label>
+                  </li>
+                  <li class="room">
+                    <input type="radio" id="5" name="seat" />
+                    <label for="5" id="label">5</label>
+                  </li>
+                  <li class="room">
+                    <input type="radio" id="6" name="seat" />
+                    <label for="6" id="label">6</label>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <ol class="rooms">
+                  <li class="room">
+                    <input type="radio" id="7" name="seat" />
+                    <label for="7" id="label">7</label>
+                  </li>
+                  <li class="room">
+                    <input type="radio" id="8" name="seat" />
+                    <label for="8" id="label">8</label>
+                  </li>
+                  <li class="room">
+                    <input type="radio" id="9" name="seat" />
+                    <label for="9" id="label">9</label>
+                  </li>
+                </ol>
+              </li>
+          </ol>
+        </div>
+        </div>
+        
+<!-- Do's & Dont's Section -->
+<div class="section-2">
+    <h2>List of Compoundable Offences</h2>
+    <a href="#">https://www.iium.edu.my/my/office/ola/iium-students-disciplinary-rules</a>
+    <h2>Do's & Dont's</h2>
+    <a href="#">Link</a>
+    <label>
+        <input type="checkbox"> I hereby confirm that I have thoroughly read and understood the regulations pertaining to the List of Compoundable Offences and do's & don'ts in the Mahallah, and I agree to comply with them to the best of my knowledge and abilities.
+    </label>
+</div>
+
+<!-- Important things to know in Mahallah Section -->
+<div class="section">
+    <h2>Important things to know in Mahallah</h2>
+    <h3>Check in & Check out Room</h3>
+    <p>Compulsory to check in at the beginning of the semester and check out at the end of the semester.</p>
+    <p>Vacate & clean the room and surrender the room key at the end of every semester.</p>
+    <h3>Live In During Vacation (LIDV)</h3>
+    <p>Application for group/official LIDV is to be submitted to RSD/mahallah office within the stated date.</p>
+    <p>LIDV for personal reason and late request for LIDV are considered as rental.</p>
+    <p>Students who fail to apply LIDV and vacate the room and surrender the room key at the end of the semester will be given a compound and will be charged for LIDV.</p>
+    <h3>Vacation Notice (Available in I-Maalum, Fb & RSD Website)</h3>
+    <h3>Mahallah Online Room Registration (MORR)</h3>
+    <p>All students who will register for the coming semester are required to do MORR at the stated date in the vacation notice (2 weeks before the final exam).</p>
+    <p>Failure to do MORR may cause students to have no room for the next semester, and students have to vacate their room and surrender the room key.</p>
+    <p>Students who are not eligible to do MORR due to: no registered subject, outstanding fees, double degree, exceed 4 years, practical training & FYP need to fill in details in the google form (<a href="bit.ly/morr_sem1">bit.ly/morr_sem1</a> or scan QR code).</p>
+    <h3>HOW TO GET ROOM FOR NEXT SEM</h3>
+    <p>Mahallah Online Room Registration (MORR) – (Available in I-Maalum, FB & RSD Website)</p>
+    <h3>Live Off Campus (LOC)</h3>
+    <p>Students who wish/have to stay off-campus: May register yourself at Mahallah Office.</p>
+    <h3>Mahallah Online Maintenance Report</h3>
+    <a href="https://bit.do/mahallahmaintenance">https://bit.do/mahallahmaintenance</a>
+    <button type="submit">Submit</button>
+</div>
+
+<footer id="footer" class="footer-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="copyright">
+                    <p><small>&copy; Mahallah Salahuddin  <br> All Rights Reserved.</small></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Mahallah</h3>
+                        <ul class="link">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Block</a></li>
+                            <li><a href="#">Management</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Our Facilities</h3>
+                        <ul class="link">
+                            <li><a href="#">Cafe</a></li>
+                            <li><a href="#">Court</a></li>
+                            <li><a href="#">Surau</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Inquiry</h3>
+                        <p>If you have any inquiries, please drop your email below and we'll contact you. </p>
+                        <form action="#" id="form-inquiry">
+                            <div class="form-field">
+                                <input type="email" placeholder="Email Address" id="email">
+                                <input type="submit" id="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        
+        function verifyForm() {
+            // Basic validation logic, replace with your own validation rules
+            var name = document.getElementById('name').value;
+            var IC = document.getElementById('IC').value;
+            var MatricNo = document.getElementById('MatricNo').value;
+            var state = document.getElementById('state').value;
+            var email = document.getElementById('email').value;
+            var telephone = document.getElementById('telephone').value;
+
+            if (name === '' || IC === '' || MatricNo === '' || state === '' || email === '' || telephone === '') {
+                alert('Please fill in all fields.');
+            } else {
+                alert('Validation successful!');
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get all room labels
+            var roomLabels = document.querySelectorAll('.rooms label');
+
+            // Function to hide all labels
+            function hideLabels() {
+                roomLabels.forEach(function(label) {
+                    label.style.display = 'none';
+                });
+            }
+
+            // Function to show labels based on floor
+            function showLabels(floor) {
+                // Hide all labels first
+                hideLabels();
+
+                // Get the corresponding room labels for the selected floor
+                var floorLabels = document.querySelectorAll('#floor' + floor + ' .rooms label');
+
+                // Show the labels for the selected floor
+                floorLabels.forEach(function(label) {
+                    label.style.display = 'block';
+                });
+            }
+
+            // Function to handle floor button click
+            function showFloor(floor) {
+                // Hide all labels initially
+                hideLabels();
+
+                // Show labels for the selected floor
+                showLabels(floor);
+            }
+
+            // Attach click event listeners to floor buttons
+            document.getElementById('floor1').addEventListener('click', function() {
+                showFloor(1);
+            });
+
+            document.getElementById('floor2').addEventListener('click', function() {
+                showFloor(2);
+            });
+
+            document.getElementById('floor3').addEventListener('click', function() {
+                showFloor(3);
+            });
+
+            document.getElementById('floor4').addEventListener('click', function() {
+                showFloor(4);
+            });
+        });
+    </script>
+</body>
+</html>
