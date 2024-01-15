@@ -1,0 +1,86 @@
+body {
+    
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: url('7804386_rFPdRGtCEmqO_e_7alD4R49tjl1jkrS-2PCwS1qHPDg.jpg') center/cover no-repeat; 
+    padding: 15px 0;
+    text-align: center;
+    color: white; 
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left, .top-right {
+    flex: 1;
+}
+
+button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #4b0101;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.center-header {
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    background-color: #bebebe;
+    padding: 5px;
+    text-align: center;
+}
+
+.mahallah-office, .mahallah-fellows, .committee{
+    display: flex;
+    background-color: #4b0101;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.person img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.person .description {
+    color: white;
+}
+
+.emergency-contacts{
+    background-color: #4b0101;
+    padding: 20px;
+    margin: 5px 0;
+    text-align: center;
+}
+.column {
+    flex: 1;
+    padding: 0 20px;
+}
+footer{
+    background-color: #4b0101;
+    padding: 15px 0;
+    color: white; 
+}
+.committee{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+}
