@@ -18,4 +18,5 @@ document.getElementById('form1').addEventListener('submit', function(event) {
                         'Comment: ' + comment + '<br>';
 
   document.getElementById('output').appendChild(outputDiv);
+  document.getElementById('form1').reset();
 });
