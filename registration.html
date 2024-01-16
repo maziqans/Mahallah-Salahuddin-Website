@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page - Salahuddin al-Ayubi Hostel</title>
     <style>
-        
         body {
             font-family: "Open Sans", Arial, serif;
             line-height: 1.8;
@@ -17,18 +16,28 @@
             margin: 0;
             padding: 0;
         }
-
         header {
-            background-color: #333;
             color: white;
-            padding: 10px 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-title {
+            margin: 0;
         }
 
-        nav {
+        .navigation {
             display: flex;
-            justify-content: flex-end;
-            background-color: #555;
-            padding: 10px;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .navigation a:first-child {
+            margin-left: 0;
         }
 
         .registration-box {
@@ -60,7 +69,7 @@
         }
         .section-header{
             padding: 20px;
-            background-image: url('7804386_rFPdRGtCEmqO_e_7alD4R49tjl1jkrS-2PCwS1qHPDg.jpg');
+            background-image: url('Project/MahallahSalahuddin.jpg');
             background-size: cover; /* Adjust as needed */
             background-position: center; /* Adjust as needed */
         }
@@ -197,19 +206,19 @@
             cursor: pointer;
         }
     </style>
-</head>
 <body>
-<div class="section-header">
-    <header>MAHALLAH SALAHUDDIN AL-AYUBI</header>
-    <nav>
-        <a href="index.html">Home</a>
-        
-        <a href="hostel.html">Block</a>
-        <a href="management.html">Management</a>
-        <a href="registration.html">Registration</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <p style="background-image: url('Registration_page/7804386_rFPdRGtCEmqO_e_7alD4R49tjl1jkrS-2PCwS1qHPDg.jpg');"></p>
+    <header>
+        <h4 class="header-title">MAHALLAH SALAHUDDIN AL-AYUBI</h4>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="hostel.html">Block</a>
+            <a href="management.html">Management</a>
+            <a href="registration">Register</a>
+            <a href="#contact">Contact</a>
+        </nav>    
+    
+    </header>
+    <p style="background-image: url('Project\MahallahSalahuddin.jpg');"></p>
     <!-- Registration Section -->
     <div class="registration-box">
         <div class="box-header">
@@ -224,7 +233,7 @@
             <input type="text" id="IC" name="IC" required>
 
             <label for="MatricNo">Matric No.:</label>
-            <input type="number" id="MatricNo" name="MatricNo" required>
+            <input type="text" id="MatricNo" name="MatricNo" required>
 
             <label for="state">State:</label>
             <input type="text" id="state" name="state" required>
@@ -245,7 +254,7 @@
         <h2>Choose Block</h2>
         <form>
             <label for="block">Select Block:</label>
-            <select id="block" name="block">
+            <select id="block" name="block" required>
                 <option value="A">Block A</option>
                 <option value="B">Block B</option>
                 <option value="C">Block C</option>
@@ -257,7 +266,7 @@
                 <option value="I">Block I</option>
                 <option value="PG">Block PG</option>
             </select>
-            <button type="submit">Submit</button>
+            <button type="submit">Submit</button required>
         </form>
     </div>
 
@@ -332,7 +341,7 @@
     <h2>Do's & Dont's</h2>
     <a href="#">Link</a>
     <label>
-        <input type="checkbox"> I hereby confirm that I have thoroughly read and understood the regulations pertaining to the List of Compoundable Offences and do's & don'ts in the Mahallah, and I agree to comply with them to the best of my knowledge and abilities.
+        <input type="checkbox" required> I hereby confirm that I have thoroughly read and understood the regulations pertaining to the List of Compoundable Offences and do's & don'ts in the Mahallah, and I agree to comply with them to the best of my knowledge and abilities.
     </label>
 </div>
 
@@ -357,7 +366,7 @@
     <p>Students who wish/have to stay off-campus: May register yourself at Mahallah Office.</p>
     <h3>Mahallah Online Maintenance Report</h3>
     <a href="https://bit.do/mahallahmaintenance">https://bit.do/mahallahmaintenance</a>
-    <button type="submit">Submit</button>
+    <button type="submit" required>Submit</button>
 </div>
 
 <footer id="footer" class="footer-color">
