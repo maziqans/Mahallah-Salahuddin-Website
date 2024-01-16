@@ -185,7 +185,7 @@ $(function(){
    $(document).ready(function () {
       // Make an AJAX request to the WorldTimeAPI
       $.ajax({
-          url: "http://worldtimeapi.org/api/timezone/Asia/Kuala_Lumpur",
+          url: "https://api.api-ninjas.com/v1/worldtime?city=Kuala_Lumpur",
           method: "GET",
           dataType: "json",
           success: function (data) {
