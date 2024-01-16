@@ -1,538 +1,377 @@
-*{
-  margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-  background-color: #e9d7d7;
-}
-.desktop-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "header"
-    "map"
-    "typeroom"
-    "faciliti"
-    "revieW"
-    "footer";
-  background-color:rgb(238, 141, 141)!important;
-  width: 100%;
-  height: auto;
-  text-align: left;
-  font-size: var(--font-size-xl);
-  color: var(--color-black);
-  font-family: var(--font-ubuntu);
-}
 .header {
-  grid-area: header;
-}
-.navbar {
-  position:absolute;
-  right:0;
-  top:3%;
-  overflow: hidden;
-  display:flex;
-  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  background-image: url('./public/rectangle-1@2x.png');
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  position: relative;
 }
 
-.navbar a {
+.header img {
+  width: 100px;
+  height: auto;
+}
+
+.header .mahallah-salahudin-al-ayubi,
+.header .hostel-review {
+  margin: 0;
+}
+
+.header .hostel-review {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family:'Roboto', sans-serif;
+  letter-spacing: 4px;
+  font-size: 35px;
+  text-shadow: 2px 2px 4px rgba(255, 253, 253, 0.5);
+}
+
+.mahallah-salahudin-al-ayubi{
+  position: absolute;
+  top : 20px;
+  left:20px;
+  font-family:'Roboto', sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.navbar {
+  position: absolute;
+  top: 2%;
+  right: 0;
+  display:flex;
+  justify-content: flex-end;
+  font-family:'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
   
-  display: block;
+
+
+.navbar a {
+  display: flex;
   color: #f8efef;
   text-align:right;
   padding: 14px 16px;
   text-decoration: none;
 }
-
 .navbar a:hover {
-  background-color: #e7e2e2;
+  background-color: #837878;
   color: black;
 }
 
-@media screen and (max-width: 1920px) {
-  .navbar a {
-    float:none;
-    display: block;
-    text-align: right;
-  }
-}
 .map {
-  grid-area: map;
-}
-
-.map-of-mahallah {
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, 1000%);
-  white-space: pre-wrap;
-  line-height: 135%;
-}
-
-.typeroom{
-  grid-area: typeroom;
-}
- 
-.type-of-room {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%,-50%);
-}
-
-.square {
-  width: 1900px;
-  height: 500px;
-  background-color:#f0e6e6;
-  position: absolute;
-  top: 940px;
-  left: 0px;
-}
-
-.faciliti {
-  grid-area: faciliti;
-}
-.revieW{
-  grid-area: revieW;
-}
-.footer {
-  grid-area: footer;
-}
-.insta {
-  position: absolute;
-  top: 2850px;
-  left: 1000px;
-  width:100px;
-}
-
-.mySlides {
-  display: none;
-}
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  font-size: 24px;
-  color: rgb(12, 12, 12);
-  
-  border: none;
-  cursor: pointer;
-}
-.prev {
-  left: -650px; /* Adjust the left position for the "Previous" arrow */
-}
-
-.next {
-  right: -100px; /* Adjust the right position for the "Next" arrow */
-}
-
-.prev:hover, .next:hover {
-  background-color: #c0adad;
-}
-
-
-
-html{
-  height:auto;
-  width:100%;
- 
-}
-body{
-  width:100%;
-  height :auto ;
+  background-color: #3f3a3a; 
+  height:800px;
+  max-width:2000px;
+  margin: 0 auto;  
   position: relative;
 }
 
-
-.desktop-1-child {
+.map .map-of-mahallah {
+  font-size: 40px; 
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 457px;
-  object-fit: cover;
-}
-
-.hostel-review {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 400%);
-  font-size: var(--font-size-17xl);
-  letter-spacing: 2px;
-  line-height: 135%;
-  text-transform: capitalize;
-  color: var(--color-white);
-}
-.desktop-1-inner,
-.desktop-1-item {
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-.desktop-1-item {
-  top: 940px;
-  background-color: #181717;
-  height: 522px;
-}
-.desktop-1-inner {
-  top: 2030px;
-  background-color: var(--color-gainsboro-200);
-  height: 599px;
-}
-.review-form {
-  position: absolute;
-  top: 2090px;
-  left: 77px;
-  line-height: 28px;
-  font-family: var(--font-inter);
-}
-.desktop-1-child1,
-.rectangle-icon {
-  position: absolute;
-  top:23%;
-  left: 50%;
-  transform: translate(-50%, 150%);
-  width: 207px;
-  height: 372px;
-  object-fit: cover;
-}
-.desktop-1-child1
- {
-  top: 700px;
-  left: 300px;
-  border-radius: 50px;
-  width: 474px;
-  height: 262px;
-}
-.rectangle-div {
-  position: absolute;
-  top: 1150px;
-  left: 657px;
-  border-radius: 20px;
-  background-color: var(--color-gainsboro-200);
-  width: 622px;
-  height: 182px;
-}
-.desktop-1-child2,
-.image-1-icon,
-.image-2-icon,
-.image-3-icon {
-  position: absolute;
-  top: 1564px;
-  left: 183px;
-  width: 70px;
-  height: 61px;
-  object-fit: cover;
-}
-.desktop-1-child2,
-.image-2-icon,
-.image-3-icon {
-  top: 1583px;
-  left: 673px;
-  width: 63px;
-}
-.desktop-1-child2,
-.image-3-icon {
-  left: 1146px;
-  width: 109px;
-}
-.desktop-1-child2 {
-  top: 1670px;
-  left: 20px;
-  width: 413px;
-  height: 249px;
+  left:50%; 
+  transform: translateX(-50%); 
+  top: 20px;
+  color: antiquewhite;
+  background-color: #4d0f0f;
+  border-radius: 8px;
 }
 
-.desktop-1-child5,
-.desktop-1-child6 {
-  position: absolute;
-  top: 1670px;
-  left: 507px;
-  width: 413px;
-  height: 249px;
-  object-fit: cover;
-}
-.desktop-1-child6 {
-  left: 1008px;
-}
-
-
-.any-inquiry-please,
-.facilities {
-  position: absolute;
-  top: 2732px;
-  font-size: var(--font-size-5xl);
-  letter-spacing: 2px;
-  line-height: 135%;
-  color: var(--color-gray-100);
-  display: inline-block;
-}
-.facilities {
-  left: 486px;
-  text-transform: uppercase;
-  width: 194px;
-  height: 56px;
-}
-.any-inquiry-please {
-  left: 878px;
-  text-transform: capitalize;
-  width: 595px;
-  text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
-}
-.blocks,
-.contact,
-.home,
-.mahallah,
-.management,
-.register {
-  position: absolute;
-  left: 0;
-  letter-spacing: 2px;
-  line-height: 135%;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 193px;
-  height: 51px;
-}
-.mahallah {
-  top: 0;
-  color: var(--color-gray-100);
-}
-.blocks,
-.contact,
-.home,
-.management,
-.register {
-  top: 84px;
-  font-weight: 500;
-}
-.blocks,
-.contact,
-.management,
-.register {
-  top: 151px;
-}
-.contact,
-.management,
-.register {
-  top: 219px;
-  width: 281px;
-  height: 50px;
-}
-.contact,
-.register {
-  top: 286px;
-  width: 193px;
-  height: 51px;
-}
-.contact {
-  top: 353px;
-}
-.cafes,
-.court,
-.mahallah-parent {
-  font-size: var(--font-size-5xl);
-  color: var(--color-orangered);
-}
-.mahallah-parent {
-  position: absolute;
-  top: 2732px;
-  left: 130px;
-  width: 281px;
-  height: 404px;
-}
-.cafes,
-.court {
-  left: 486px;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  width: 194px;
-  height: 56px;
-}
-.cafes {
-  position: absolute;
-  top: 2825px;
-  letter-spacing: 2px;
-  line-height: 135%;
-}
-.court {
-  top: 2902px;
-}
-.court,
-.dobi,
-.home1,
-.mahallah-salahudin-al-ayubi {
-  position: absolute;
-  letter-spacing: 2px;
-  line-height: 135%;
-}
-.dobi {
-  top: 2972px;
-  left: 486px;
-  font-size: var(--font-size-5xl);
-  text-transform: uppercase;
-  font-weight: 500;
-  color: var(--color-orangered);
-  display: inline-block;
-  width: 194px;
-  height: 56px;
-}
-.home1,
-.mahallah-salahudin-al-ayubi {
-  top: 24px;
-}
-.mahallah-salahudin-al-ayubi {
-  left: 19px;
-  font-size: var(--font-size-5xl);
-  text-transform: capitalize;
-  display: inline-block;
-  color: var(--color-white);
-  width: 483px;
-  height: 23px;
-}
-.home1 {
-  left: 674px;
-  width: 92px;
-}
-
-.block,
-.home1,
-.management1,
-.register1 {
-  text-transform: capitalize;
-  display: inline-block;
-  color: var(--color-white);
-  height: 23px;
-}
-.block {
-  position: absolute;
-  top: 24px;
-  left: 797px;
-  letter-spacing: 2px;
-  line-height: 135%;
-  width: 92px;
-}
-.management1,
-.register1 {
-  top: 22px;
-}
-.management1 {
-  position: absolute;
-  left: 926px;
-  letter-spacing: 2px;
-  line-height: 135%;
-  width: 210px;
-}
-.register1 {
-  left: 1125px;
-  width: 136px;
-}
-.contact1,
-.map-of-mahallah,
-.quad-room,
-.twin-room,
-.single-room,
-.register1,
-.type-of-room {
-  position: absolute;
-  letter-spacing: 2px;
-  line-height: 135%;
+.rectangle-icon{
+position:absolute;
+  top: 75px;
+  left:50%;
+  transform: translateX(-50%);
+  width:400px;
+  display:block;
   text-align: center;
-}
-.contact1 {
-  top: 22px;
-  left: 1298px;
-  text-transform: capitalize;
-  display: inline-block;
-  color: var(--color-white);
-  width: 142px;
-  height: 23px;
-}
-.map-of-mahallah,
-.quad-room,
-.twin-room,
-.single-room,
-.type-of-room
- {
-  font-size: var(--font-size-17xl);
+  border-radius: 10px;
 }
 
-
-.quad-room,
-.twin-room,
-.single-room,
-.type-of-room
- {
-  top: 940px;
-  left: 577px;
-}
-.quad-room,
-.twin-room,
-.single-room {
-  top: 1014px;
-  left: 599px;
-  color: #f17b7b;
+.typeroom {
+  background-color: #1816166e; 
+  height:550px;
+  position: relative;
+  max-width: 2000px;
+  margin: 0 auto;  
 }
 
-.iium-student-ratedaymonthly {
-  margin: 0;
-}
-.iium-student-ratedaymonthly-container {
+.type-of-room{
+  font-size: 40px; 
   position: absolute;
-  top: 1170px;
-  left: 687px;
-  font-size: 25px;
-  letter-spacing: 2px;
-  line-height: 135%;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 592px;
-  height: 142px;
+  left:50%; 
+  transform: translateX(-50%); 
+  top: 10px;
+  color: antiquewhite;
+  background-color: #4d0f0f;
+  border-radius: 8px;
+  padding:2px;
 }
-.facilities1 {
-  top: 1487px;
-  left: 608px;
-  font-size: var(--font-size-17xl);
-  letter-spacing: 2px;
-  line-height: 135%;
-}
-.facilities1,
-.label,
-.review {
+
+.quad-room, .twin-room, .single-room {
+  color:#3f3a3a;
   position: absolute;
+  top: 70px; 
+  left: 50%; 
+  padding: 10px;
+  transform: translateX(-50%);
+  font-family:'Montserrat', sans-serif ;
+  font-size: 30px;
+  background-color:beige;
+  border-radius:3px;
+  box-shadow:0px 0px 10px rgb(236, 234, 234) ;
+  
 }
-.review {
-  top: 2041px;
-  left: 638px;
-  font-size: var(--font-size-17xl);
-  letter-spacing: 2px;
+
+.desktop-1-child1 {
+  position: absolute; 
+  top: 150px;
+  left: 400px;
+  transform: translateX(-50%);
+  max-width: 550px;
+}
+
+.iium-student-ratedaymonthly-container{
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  transform: translateX(-50%);
+  max-width: 2000px;
+  
  
 }
 
-.desktop-1-child3 {
-  position: absolute;
-  top: 2134px;
-  left: 594px;
-  background-color: #eb6161;
-  width: 707px;
-  height: 426px;
-}
-.review1 {
-  position: absolute;
-  top: 2097px;
-  left: 823px;
-  line-height: 28px;
-  font-family: var(--font-inter);
+.iium-student-ratedaymonthly{
+  position:relative;
+  top:-30px;
+  left: 1000px;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+  background-color: #f0f0f0; /* Add this line */
+  padding: 20px;
+  border-radius: 10px;
 }
 
+.prev{
+  position: relative;
+  top:150px;
+  left:60px;
+  background-color: #fffdfd;
+  font-size: 40px;
+  padding: 3px;
+}
 
+.prev:hover{
+  background-color: #6d6969;
+  color:#f0f0f0;
+}
 
+.next{
+  position: relative;
+  top:150px;
+  left:1400px;
+  background-color: #f7f5f5;
+  font-size: 40px;
+  padding: 3px;
+}
 
+.next:hover{
+  background-color: #6d6969;
+  color:#f0f0f0;
+}
 
+.faciliti {
+  background-color:#3f3a3a ;
+  height:600px;
+  position:relative;
+}
 
+.facilities1{
+  font-size: 40px; 
+  position: absolute;
+  top: 15px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  color: antiquewhite;
+  background-color: #4d0f0f;
+  border-radius: 8px;
+  padding:2px;
+}
+.image-1-icon {
+  width: 120px; 
+  height: 100px; 
+  position: absolute; 
+  top:90px;
+  left:19%;
+  transform: translateX(-50%);
+}
+.image-2-icon{
+  width: 100px; 
+  height: 100px; 
+  position: absolute; 
+  top:90px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.image-3-icon{
+  width: 125px; 
+  height: 100px; 
+  position: absolute; 
+  top:90px;
+  left:84%;
+  transform: translateX(-50%);
+}
+
+.desktop-1-child2, .desktop-1-child5,.desktop-1-child6{
+  width: 450px; 
+  height: 250px; 
+  object-fit: cover;
+  box-shadow:0px 0px 10px rgb(236, 234, 234);
+}
+.desktop-1-child2{
+  position: absolute; 
+  top:250px;
+  left:18%;
+  transform: translateX(-50%);
+}
+.desktop-1-child5{
+  position: absolute; 
+  top:250px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.desktop-1-child6{
+  position: absolute; 
+  top:250px;
+  left:84%;
+  transform: translateX(-50%);
+}
+
+.revieW {
+  position: relative;
+  max-width: 2000px;
+  margin: 0 auto;  
+  background-color:#1816166e; 
+  padding: 20px;
+  height:650px;
+}
+
+.review {
+  font-size: 40px; 
+  position: absolute;
+  top: 15px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  color: antiquewhite;
+  background-color: #4d0f0f;
+  border-radius: 8px;
+  padding:2px;
+}
+.review-form{
+  position: absolute;
+  top: 70px;
+  left: 18%;
+  transform: translateX(-50%);
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  background-color: #f0f0f0; /* Add this line */
+  padding: 10px;
+  border-radius: 10px;
+}
+.review1{
+  position: absolute;
+  top: 70px;
+  left: 58%;
+  transform: translateX(-50%);
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  background-color: #f0f0f0; 
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer{
+  background-color:#fdfafa ;
+  height:250px;
+  position:relative;
+  padding: 20px; /* Adds space around the content */
+  display: flex;
+  flex-direction: column;
+}
+
+.mahallah-parent{
+  position: absolute;
+  font-size:20px;
+  top: 40px; 
+  left: 20%; 
+  transform: translateX(-50%);
+  border-radius: 8px;
+  padding:2px;
+  font-family:'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.mahallah-parent .home, .mahallah-parent .blocks, .mahallah-parent .management, .mahallah-parent .register, .mahallah-parent .contact {
+  margin-bottom: 20px; 
+  color:orange;
+}
+
+.facilities, .cafes, .court,.dobi{
+  position: absolute;
+  font-size:20px;
+  top:40px;
+  left: 40%; 
+  transform: translateX(-50%);
+  border-radius: 8px;
+  padding:2px;
+  font-family:'Roboto', sans-serif;
+  text-transform: uppercase;
+  
+}
+
+.cafes, .court,.dobi{
+  color:orange;
+}
+.cafes{
+  top:60px;
+}
+.court{
+  top:100px;
+}
+.dobi{
+  top:140px;
+}
+.any-inquiry-please{
+  position: absolute;
+  font-size:20px;
+  top:40px;
+  left: 70%; 
+  transform: translateX(-50%);
+  border-radius: 8px;
+  padding:2px;
+  font-family:'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+.insta {
+  position: absolute;
+  top: 3260px; 
+  right: 400px; 
+  width:100px;
+  transform: translateX(-50%);
+}

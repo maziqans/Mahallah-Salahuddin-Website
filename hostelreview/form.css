@@ -1,50 +1,51 @@
-#feedback-page{
-	text-align:center;
-}
 
-#form-container {
-	display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 20vh;
-}
- 
-#form-main{
-	width:100%;
-	float:left;
-	padding-top:0px;
+
+#form-div{
 	position: absolute;
-	left: 0%;
-	
-}
+	top: 130px;
+	left: 20%;
+	transform: translateX(-50%);
+	font-family: 'Helvetica Neue', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 20px;
+	background-color: rgba(72,72,72,0.4); 
+	padding: 10px;
+	padding-left:35px;
+	  padding-right:35px;
+	  padding-top:-10px;
+	  padding-bottom:10px;
+	border-radius: 10px;
+	box-shadow:0px 0px 10px rgb(7, 7, 7);
+  
+  }
+  
+  #form-main {
+	width: 100%;
+	float: left;
+	padding-top: 0px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  
+ 
+
 #output {
     position: absolute;
-    left: 180%; /* move it to the right of the form */
-    top: 0; /* align it to the top of the form */
+    left: 250%; /* move it to the right of the form */
+    top: 0; 
+	transform: translateX(-50%);/* align it to the top of the form */
     width: 400px; /* adjust as needed */
 	height:450px;
     background-color: #f9f9f9; /* adjust as needed */
     padding: 20px; /* adjust as needed */
-    border-radius: 5px; /* adjust as needed */
+    border-radius: 15px; /* adjust as needed */
+	box-shadow:0px 0px 10px rgb(46, 45, 45);
 }
 .outputDiv {
     margin-bottom: 20px; /* adjust as needed */
-}
-#form-div {
-	background-color:rgba(72,72,72,0.4);
-	padding-left:35px;
-	padding-right:35px;
-	padding-top:-10px;
-	padding-bottom:10px;
-	width: 25%;
-    height:460px;
-	float: left;
-	left: 50%;
-	position: absolute;
-  margin-top:2125px;
-	margin-left: -700px;
-	box-sizing: border-box;
-  
 }
 
 .feedback-input {
@@ -180,19 +181,9 @@ input:focus, textarea:focus {
   }
 
 
-#form1 {
-	order:1;
-    flex: 1;
-    margin-right: 20px; /* adjust as needed */
-}
 
-#output {
-	order: 3;
-    flex: 1;
-    background-color: #f9f9f9; /* adjust as needed */
-    padding: 20px; /* adjust as needed */
-    border-radius: 5px; /* adjust as needed */
-}
+
+
   
   
  
